@@ -14,7 +14,14 @@ import note3 from './assets/notes app/WhatsApp Image 2025-11-28 at 12.45.33 AM (
 import note4 from './assets/notes app/WhatsApp Image 2025-11-28 at 12.45.33 AM.jpeg'
 
 // for unihub
-import unihub1 from './assets/unihub/Screenshot 2025-11-27 at 10.46.15 PM.png'
+import unihub1 from './assets/unihub/frontpage.png'
+import unihub2 from './assets/unihub/abtme.png'
+import unihub3 from './assets/unihub/events.png'
+import unihub4 from './assets/unihub/newshome.png'
+import unihub5 from './assets/unihub/clubs.png'
+import unihub6 from './assets/unihub/news.png'
+import unihub7 from './assets/unihub/bt.png'
+
 
 // ir
 import ir1 from './assets/ir/Screenshot 2025-11-28 at 2.37.27 AM.png'
@@ -35,9 +42,9 @@ function App() {
       year: "2024",
       description: "A comprehensive platform designed to revolutionize how students and committee members engage with university clubs and events. Students can browse and register for events, follow clubs, receive real-time notifications, and explore committee positions. Features a dedicated committee dashboard for tracking event engagement, managing job openings, and overseeing club finances with a built-in budget tracker.",
       technologies: ["React", "PostgreSQL", "Nginx", "Node.js"],
-      github: "https://github.com/yourusername/unihub",
+      github: "https://github.com/xxivani/unihub",
       demo: "https://unihub.example.com",
-      images: [unihub1],
+      images: [unihub1,unihub2,unihub3,unihub4, unihub5, unihub6, unihub7],
       status: "COMPLETED"
     },
     {
@@ -46,7 +53,7 @@ function App() {
       year: "2024",
       description: "A productivity-focused Chrome extension designed to eliminate distractions and track focus sessions. Users can create tasks with daily time goals, select specific tabs to focus on during sessions, and get locked out of other tabs. Features progress visualization through graphs and bar charts to help users monitor their productivity patterns and maintain consistent focus habits.",
       technologies: ["JavaScript", "Chrome API", "Chart.js", "Local Storage"],
-      github: "https://github.com/yourusername/tablock",
+      github: "https://github.com/xxivani/tablock",
       demo: "https://chrome.google.com/webstore/tablock",
       images: [tablockImage1,tablockImage2,tablockImage3, tablockImage4, tablockImage5, tablockImage6],
       status: "COMPLETED"
@@ -55,10 +62,10 @@ function App() {
       id: 3,
       title: "IR HOSPITAL - INTERVENTION RADIOLOGY",
       year: "2025",
-      description: "Working on a comprehensive hospital management system for IR hospital's Intervention Radiology department, streamlining patient workflow and procedural tracking. Enables doctors and staff to track patient records, verify pre-procedural requirements, manage sign-in/sign-out processes, and ensure all checklist items are completed. Designed to improve staff efficiency and maintain procedural compliance through an intuitive dashboard interface.",
+      description: "Working on a Freelance hospital management system for IR hospital's Intervention Radiology department, streamlining patient workflow and procedural tracking. Enables doctors and staff to track patient records, verify pre-procedural requirements, manage sign-in/sign-out processes, and ensure all checklist items are completed. Designed to improve staff efficiency and maintain procedural compliance through an intuitive dashboard interface. The above images are the work in progress images of the web application.",
       technologies: ["React", "Flask", "PostgreSQL", "REST API"],
-      github: "https://github.com/yourusername/ir-hospital",
-      demo: "#",
+      //github: "https://github.com/yourusername/ir-hospital",
+      //demo: "#",
       images: [ir1],
       status: "IN PROGRESS"
     },
@@ -68,7 +75,7 @@ function App() {
       year: "2025",
       description: "A distraction-free, minimalist note-taking application built for mobile platforms. Users can create organized folder structures and make quick notes within them. Focuses on simplicity and effectiveness, providing a clean interface for capturing thoughts and ideas without unnecessary features or visual clutter. Perfect for users who value speed and clarity in their note-taking workflow.",
       technologies: ["React Native", "Expo", "Supabase", "AsyncStorage"],
-      github: "https://github.com/yourusername/minimalist-notes",
+      github: "https://github.com/xxivani/notes_rn",
       demo: "#",
       images: [note1,note2,note3,note4],
       status: "COMPLETED"
@@ -77,16 +84,16 @@ function App() {
       id: 5,
       title: "RED - PDF READER MOBILE APP",
       year: "2025",
-      description: "A lightweight and efficient PDF reader application for mobile devices. Built with React Native and Expo to provide seamless PDF viewing experience with smooth scrolling, zoom capabilities, and optimized rendering. Designed to handle various PDF sizes while maintaining performance and user experience.",
+      description: "A lightweight and efficient PDF reader application for mobile devices. Built with React Native and Expo to provide seamless PDF viewing experience with smooth scrolling, zoom capabilities, and optimized rendering. Designed to handle various PDF sizes while maintaining performance and user experience. The above images are the UI I have designed for the app",
       technologies: ["React Native", "Expo", "PDF.js", "File System"],
-      github: "https://github.com/yourusername/pdf-reader",
-      demo: "#",
+      //github: "https://github.com/yourusername/pdf-reader",
+      //demo: "#",
       images: [red1, red2],
       status: "IN PROGRESS"
     }
   ];
 
-  const skills = ["REACT", "REACT NATIVE", "FLASK", "POSTGRESQL", "SUPABASE", "NGINX", "EXPO"];
+  const skills = ["REACT", "REACT NATIVE", "FLASK", "POSTGRESQL", "SUPABASE", "NGINX", "EXPO", "FIREBASE", "AZURE", "CI/CD", "GITHUB ACTIONS", "TYPESCRIPT", "NODE JS", "EXPRESS", "DART/FLUTTER"];
 
   const toggleProject = (id) => {
     setExpandedProjects(prev => 
@@ -228,7 +235,7 @@ function App() {
                     >
                       VIEW SOURCE →
                     </a>
-                    {project.demo !== '#' && (
+                    {/* project.demo !== '#' && (
                       <a 
                         href={project.demo} 
                         target="_blank"
@@ -237,7 +244,7 @@ function App() {
                       >
                         LIVE DEMO →
                       </a>
-                    )}
+                    )*/}
                   </div>
                 </div>
               )}
@@ -249,12 +256,11 @@ function App() {
         <footer className="footer">
           <div className="footer-left">
             <div className="footer-logo">PORTFOLIO</div>
-            <p className="footer-tagline">BUILDING DIGITAL EXPERIENCES</p>
           </div>
           <div className="footer-right">
             <div className="footer-links">
               <a href="https://github.com/xxivaani" target="_blank" rel="noopener noreferrer">GITHUB</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+              <a href="https://www.linkedin.com/in/shivani-sn-807882391" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
               <a href="mailto:snshivaani@gmail.com">EMAIL</a>
               <a href="#">RESUME</a>
             </div>
