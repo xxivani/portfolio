@@ -120,7 +120,7 @@ function App() {
           <div className="info-left">
             <h3>DEVELOPER</h3>
             <p>SHIVANI SN</p>
-            <p>FULL-STACK DEVELOPER</p>
+            <p>FULL-STACK & MOBILE DEVELOPER</p>
             <p>DUBAI, UAE</p>
           </div>
           <div className="info-right">
