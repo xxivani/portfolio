@@ -80,17 +80,17 @@ function App() {
       images: [note1,note2,note3,note4],
       status: "COMPLETED"
     },
-    {
-      id: 5,
-      title: "RED - PDF READER MOBILE APP",
-      year: "2025",
-      description: "Currently developing a lightweight and efficient PDF reader application for mobile devices using React Native and Expo. Building core features including seamless PDF rendering with smooth scrolling, pinch-to-zoom navigation, and optimized page loading to handle documents of varying sizes while maintaining responsive performance. Focusing on creating an intuitive user experience with minimal interface design and fast document access. The above images showcase the UI design currently in development.",
-      technologies: ["React Native", "Expo", "PDF.js", "File System"],
-      //github: "https://github.com/yourusername/pdf-reader",
-      //demo: "#",
-      images: [red1, red2],
-      status: "IN PROGRESS"
-    }
+    // {
+    //   id: 5,
+    //   title: "RED - PDF READER MOBILE APP",
+    //   year: "2025",
+    //   description: "Currently developing a lightweight and efficient PDF reader application for mobile devices using React Native and Expo. Building core features including seamless PDF rendering with smooth scrolling, pinch-to-zoom navigation, and optimized page loading to handle documents of varying sizes while maintaining responsive performance. Focusing on creating an intuitive user experience with minimal interface design and fast document access. The above images showcase the UI design currently in development.",
+    //   technologies: ["React Native", "Expo", "PDF.js", "File System"],
+    //   //github: "https://github.com/yourusername/pdf-reader",
+    //   //demo: "#",
+    //   images: [red1, red2],
+    //   status: "IN PROGRESS"
+    // }
   ];
 
   const skills = ["REACT", "REACT NATIVE", "FLASK", "POSTGRESQL", "SUPABASE", "NGINX", "EXPO", "FIREBASE", "AZURE", "CI/CD", "GITHUB ACTIONS", "TYPESCRIPT", "NODE JS", "EXPRESS", "DART/FLUTTER"];
