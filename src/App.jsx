@@ -47,17 +47,17 @@ function App() {
       images: [unihub1,unihub2,unihub3,unihub4, unihub5, unihub6, unihub7],
       status: "COMPLETED"
     },
-    {
-      id: 2,
-      title: "TABLOCK - FOCUS CHROME EXTENSION",
-      year: "2024",
-      description: "A productivity-focused Chrome extension designed to eliminate distractions and track focus sessions. Users can create tasks with daily time goals, select specific tabs to focus on during sessions, and get locked out of other tabs. Features progress visualization through graphs and bar charts to help users monitor their productivity patterns and maintain consistent focus habits.",
-      technologies: ["JavaScript", "Chrome API", "Chart.js", "Local Storage"],
-      github: "https://github.com/xxivani/tablock",
-      demo: "https://chrome.google.com/webstore/tablock",
-      images: [tablockImage1,tablockImage2,tablockImage3, tablockImage4, tablockImage5, tablockImage6],
-      status: "COMPLETED"
-    },
+    // {
+    //   id: 2,
+    //   title: "TABLOCK - FOCUS CHROME EXTENSION",
+    //   year: "2024",
+    //   description: "A productivity-focused Chrome extension designed to eliminate distractions and track focus sessions. Users can create tasks with daily time goals, select specific tabs to focus on during sessions, and get locked out of other tabs. Features progress visualization through graphs and bar charts to help users monitor their productivity patterns and maintain consistent focus habits.",
+    //   technologies: ["JavaScript", "Chrome API", "Chart.js", "Local Storage"],
+    //   github: "https://github.com/xxivani/tablock",
+    //   demo: "https://chrome.google.com/webstore/tablock",
+    //   images: [tablockImage1,tablockImage2,tablockImage3, tablockImage4, tablockImage5, tablockImage6],
+    //   status: "COMPLETED"
+    // },
     {
       id: 3,
       title: "IR HOSPITAL - INTERVENTION RADIOLOGY",
