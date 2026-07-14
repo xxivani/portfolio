@@ -346,7 +346,6 @@ function App() {
           <div className="footer-right">
             <div className="footer-links">
               <a href="https://github.com/xxivani" target="_blank" rel="noopener noreferrer">GITHUB</a>
-              <a href="https://www.linkedin.com/in/shivani-sn-807882391" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
               <a href="mailto:snshivaani@gmail.com">EMAIL</a>
               <a href="#">RESUME</a>
             </div>
