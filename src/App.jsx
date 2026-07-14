@@ -27,15 +27,87 @@ import unihub7 from './assets/unihub/bt.png'
 import ir1 from './assets/ir/Screenshot 2025-11-28 at 2.37.27 AM.png'
 
 //red
-import red1 from './assets/red/Screenshot 2025-11-28 at 2.39.42 AM.png'
-import red2 from './assets/red/Screenshot 2025-11-28 at 2.39.56 AM.png'
+import red1 from './assets/red/home.jpeg'
+import red2 from './assets/red/nav.jpeg'
+import red3 from './assets/red/reader.jpeg'
+import red4 from './assets/red/theme.jpeg'
+
+
+//gdg
+import gdg1 from './assets/gdg/1.png'
+import gdg2 from './assets/gdg/2.png'
+import gdg3 from './assets/gdg/3.png'
+import gdg4 from './assets/gdg/4.png'
+import gdg5 from './assets/gdg/5.png'
+import gdg6 from './assets/gdg/6.png'
+import gdg7 from './assets/gdg/7.png'
+import gdg8 from './assets/gdg/8.png'
+import gdg9 from './assets/gdg/9.png'
+import gdg10 from './assets/gdg/10.png'
+import gdg11 from './assets/gdg/11.png'
+import gdg12 from './assets/gdg/12.png'
+
+// frame
+import frame1 from './assets/frame/frame.png'
+
+// viniles
+import viniles1 from './assets/viniles/viniles.png'
+
 
 
 function App() {
-  const [expandedProjects, setExpandedProjects] = useState([]);
+  const [expandedProjects, setExpandedProjects] = useState([1, 3, 4, 5, 6, 7, 8]);
   const [currentImageIndexes, setCurrentImageIndexes] = useState({}); 
 
   const projects = [
+    {
+      id: 8,
+      title: "VINILES - DESKTOP MUSIC PLAYER",
+      year: "2026",
+      description: "A cross-platform desktop music player for Mac and Windows, sold as a one-time purchase on Gumroad. Import single songs or entire playlists straight from YouTube, get synced karaoke-style lyrics, and manage a real local library — no subscription, no algorithm. Built with Electron and React, with a SQLite-backed library, yt-dlp and ffmpeg powering imports, five hand-tuned visual themes, native macOS Now Playing integration, and a fully code-signed, cross-platform auto-update pipeline.",
+      keyFeatures: [
+        "Local music library with full metadata and album art",
+        "Import single songs or entire playlists straight from YouTube",
+        "Synced, karaoke-style lyrics powered by LRCLIB",
+        "Five hand-tuned visual themes, from Espresso to Phosphor",
+        "Native macOS Now Playing & Control Center integration",
+        "Signed, cross-platform auto-updates for Mac and Windows"
+      ],
+      technologies: ["Electron", "React", "SQLite", "yt-dlp", "ffmpeg", "electron-updater"],
+      demo: "https://viniles.netlify.app",
+      images: [viniles1],
+      status: "COMPLETED"
+    },
+    {
+      id: 5,
+      title: "Bookmarked - E-Book Reader",
+      year: "2025",
+      description: "A feature-rich Android e-book reader built with Kotlin and Jetpack Compose, supporting both PDF and EPUB formats with extensive customization options. Features an elegant dark theme with sophisticated typography and professional aesthetics for a premium reading experience.",
+      technologies: ["Kotlin", "Jetpack Compose", "Room Database", "Readium SDK", "PDFBox", "Firebase Analytics"],
+      keyFeatures: [
+        "EPUB & PDF support with optimized lazy loading",
+        "Six reading themes with customizable fonts and sizes",
+        "Chapter-based navigation with gesture controls",
+        "Full-text search with highlighted results",
+        "Bookmarking system and progress tracking",
+        "Auto-scroll with adjustable speed settings",
+        "Organized shelf system (Want to Read, Reading, Done)",
+        "Automatic metadata and cover extraction"
+      ],
+      demo:"https://bookmarked-reader.vercel.app",
+      images: [red1, red2, red3, red4],
+      status: "IN PROGRESS"
+    },
+    {
+      id: 7,
+      title: "FRAME - E-COMMERCE CLOTHING STORE",
+      year: "2025",
+      description: "A full e-commerce storefront for a clothing brand, built end to end: a browsable product catalog, persistent cart, and a checkout flow designed to minimize drop-off. Built with React on the frontend and Supabase for data, auth, and storage, with Stripe handling payments. Deployed on Vercel.",
+      technologies: ["React", "Supabase", "Stripe", "Vercel"],
+      demo: "https://frame-one-orcin.vercel.app",
+      images: [frame1],
+      status: "IN PROGRESS"
+    },
     {
       id: 1,
       title: "UNIHUB - UNIVERSITY PLATFORM",
@@ -80,20 +152,32 @@ function App() {
       images: [note1,note2,note3,note4],
       status: "COMPLETED"
     },
-    // {
-    //   id: 5,
-    //   title: "RED - PDF READER MOBILE APP",
-    //   year: "2025",
-    //   description: "Currently developing a lightweight and efficient PDF reader application for mobile devices using React Native and Expo. Building core features including seamless PDF rendering with smooth scrolling, pinch-to-zoom navigation, and optimized page loading to handle documents of varying sizes while maintaining responsive performance. Focusing on creating an intuitive user experience with minimal interface design and fast document access. The above images showcase the UI design currently in development.",
-    //   technologies: ["React Native", "Expo", "PDF.js", "File System"],
-    //   //github: "https://github.com/yourusername/pdf-reader",
-    //   //demo: "#",
-    //   images: [red1, red2],
-    //   status: "IN PROGRESS"
-    // }
+    {
+    id: 6,
+    title: "PRODUCTIVE - AI STUDENT PRODUCTIVITY PLATFORM",
+    year: "2025",
+    description: "A comprehensive AI-powered educational productivity platform developed for the ASUS Copilot Challenge 2026, designed to transform how students manage their academic workload through deep Microsoft ecosystem integration and intelligent automation. Built with React TypeScript and Python Flask, the platform combines assignment management, intelligent study planning, and seamless Microsoft tool integration into a unified interface. Features a modern dark-themed UI with Tailwind CSS using a custom 'Odyssey' color palette, deployed on Vercel (frontend) and Render (backend) with OAuth 2.0 authentication via MSAL for secure Microsoft Graph API access. Positioned as a Microsoft-native educational solution targeting universities and schools with a B2B SaaS business model.",
+    keyFeatures: [
+      "Assignment Dashboard: Centralized view that automatically syncs deadlines from Microsoft Outlook Calendar with proactive reminders and workload visualization",
+      "AI Study Planner: Generates personalized study schedules using Azure OpenAI based on assignment complexity, deadlines, and learning patterns, breaking tasks into manageable daily goals",
+      "Spaced Repetition System: Tracks review sessions with interactive GitHub-style heatmap visualization using Recharts to optimize long-term retention and learning consistency",
+      "Note Organization: Seamless integration with Microsoft OneNote for creating, syncing, and searching notes across devices with proper categorization",
+      "Task Management: Direct connection to Microsoft To Do for synchronizing academic tasks with existing productivity workflows",
+      "AI Chatbot: Context-aware study assistance providing academic support, answering questions, and offering motivational guidance throughout study sessions",
+      "Professor Dashboard: Course management tools for educators including student engagement tracking, assignment completion monitoring, and AI-powered quiz generation",
+      "Microsoft Teams Integration: Facilitates seamless communication between students and instructors directly within the platform",
+      "Authentication System: Secure OAuth 2.0 implementation using MSAL with redirect-based flows for reliable Microsoft Graph API access",
+      "Modern UI/UX: Clean, distraction-free interface inspired by Obsidian with collapsible sidebar, proper contrast ratios, and responsive design using Radix UI components"
+    ],
+    technologies: ["React", "TypeScript", "Vite", "Python", "Flask", "SQLite", "Tailwind CSS", "Microsoft Graph API", "Azure OpenAI", "MSAL", "OAuth 2.0", "Zustand", "Recharts", "Radix UI", "Lucide React", "Vercel", "Render", "REST API"],
+    github: "https://github.com/slkarhmn/gdg-hackathon",
+    // demo: "https://productive.example.com",
+    images: [gdg1, gdg2,gdg3,gdg4, gdg5, gdg6, gdg7, gdg8, gdg9, gdg10, gdg11, gdg12], // Add your screenshot images here
+    status: "COMPLETED"
+  }
   ];
 
-  const skills = ["REACT", "REACT NATIVE", "FLASK", "POSTGRESQL", "SUPABASE", "NGINX", "EXPO", "FIREBASE", "AZURE", "CI/CD", "GITHUB ACTIONS", "TYPESCRIPT", "NODE JS", "EXPRESS", "DART/FLUTTER"];
+  const skills = ["REACT", "REACT NATIVE", "FLASK", "POSTGRESQL", "SUPABASE", "NGINX", "EXPO", "FIREBASE", "AZURE", "CI/CD", "GITHUB ACTIONS", "TYPESCRIPT", "NODE JS", "EXPRESS", "DART/FLUTTER", "ELECTRON", "SQLITE", "STRIPE"];
 
   const toggleProject = (id) => {
     setExpandedProjects(prev => 
@@ -111,7 +195,7 @@ function App() {
           <h1 className="logo">PORTFOLIO</h1>
           <div className="header-info">
             <span className="status-badge">AVAILABLE FOR WORK</span>
-            <span className="date">UPDATED: NOV.27.2025</span>
+            <span className="date">UPDATED: JUL.15.2025</span>
           </div>
         </header>
 
@@ -227,15 +311,17 @@ function App() {
                     </div>
                   </div>
                   <div className="project-actions">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      VIEW SOURCE →
-                    </a>
-                    {/* project.demo !== '#' && (
+                    {project.github && (
+                      <a 
+                        href={project.github} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        VIEW SOURCE →
+                      </a>
+                    )}
+                    {project.demo && project.demo !== '#' && (
                       <a 
                         href={project.demo} 
                         target="_blank"
@@ -244,7 +330,7 @@ function App() {
                       >
                         LIVE DEMO →
                       </a>
-                    )*/}
+                    )}
                   </div>
                 </div>
               )}
