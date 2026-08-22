@@ -205,7 +205,7 @@ function App() {
             <h3>DEVELOPER</h3>
             <p>SHIVANI SN</p>
             <p>FULL-STACK & MOBILE DEVELOPER</p>
-            <p>UNITED KINGDOM</p>
+            {/*<p>UNITED KINGDOM</p>*/}
           </div>
           <div className="info-right">
             <h3>CONTACT</h3>
